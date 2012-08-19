@@ -1,0 +1,3 @@
+[submodule "tests/php-simpletest"]
+	path = tests/simpletest
+	url = https://github.com/git-mirror/simpletest.git

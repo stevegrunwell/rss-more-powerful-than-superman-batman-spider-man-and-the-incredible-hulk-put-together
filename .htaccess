@@ -1,0 +1,6 @@
+RewriteEngine on
+
+# /rss-feed => /feed.php?feed=rss-feed
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule (.+) feed.php?feed=$1 [L]

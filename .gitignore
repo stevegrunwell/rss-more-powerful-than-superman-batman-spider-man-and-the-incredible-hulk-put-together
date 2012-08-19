@@ -1,0 +1,4 @@
+# Keep these files out of the repo:
+tests/simpletest/*
+*.DS_Store
+*Thumbs.db
