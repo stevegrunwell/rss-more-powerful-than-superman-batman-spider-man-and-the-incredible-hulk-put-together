@@ -16,7 +16,7 @@ require_once 'lib/functions.php';
 html, body { max-width: 980px; margin: 0 auto; font-family: sans-serif; }
 body { padding: 2% 4%; }
 ul { margin: 0; padding: 0; list-style: none; }
-li { margin-bottom: 1em; }
+li { margin-bottom: 1.8em; }
 .feed-title, .source-link { display: block; font-weight: bold; }
 .source-link { font-size: .8em; text-transform: lowercase; }
 </style>
