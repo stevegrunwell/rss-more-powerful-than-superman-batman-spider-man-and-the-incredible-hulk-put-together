@@ -11,7 +11,6 @@ require_once 'lib/functions.php';
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>RSS More Powerful Than Superman, Batman, Spider-Man, and the Incredible Hulk Put Together</title>
-<meta name="robots" content="noindex" />
 <style type="text/css">
 html, body { max-width: 980px; margin: 0 auto; font-family: sans-serif; }
 body { padding: 2% 4%; }
