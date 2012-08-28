@@ -29,15 +29,15 @@ function replace_jot_comic( $description ) {
   <description><?php echo $xml->channel->description; ?></description>
   <lastBuildDate><?php echo date( 'r' ); ?></lastBuildDate>
   <language><?php echo $xml->channel->language; ?></language>
-<?php foreach ( $xml->channel->item as $i ) : ?>
+<?php foreach ( $xml->channel->item as $i ) : $comic = replace_jot_comic( $i->description ); ?>
 
   <item>
     <title><?php echo $i->title; ?></title>
     <link><?php echo $i->link; ?></link>
     <pubDate><?php echo $i->pubDate; ?></pubDate>
     <guid><?php echo $i->guid; ?></guid>
-    <description><?php echo $i->description; ?></description>
-    <content:encoded><![CDATA[<?php echo replace_jot_comic( $i->description ); ?>]]></content:encoded>
+    <description><?php echo $comic; ?></description>
+    <content:encoded><![CDATA[<?php echo $comic; ?>]]></content:encoded>
   </item>
 
 <?php endforeach; ?>
